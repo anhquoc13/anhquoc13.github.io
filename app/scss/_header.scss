@@ -1,11 +1,17 @@
 .header {
+  padding: 0 10%;
   nav {
     padding: 24px;
+    font-size: $font-med;
   }
   &__logo {
+    cursor: pointer;
+    font-weight: bold;
   }
 
-  a, a:visited, a:hover {
+  a,
+  a:visited,
+  a:hover {
     text-decoration: none;
   }
 
@@ -20,6 +26,40 @@
       &:not(:last-child) {
         margin-top: 2px;
         margin-bottom: 3px;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      cursor: pointer;
+      position: relative;
+      // color:
+      transition: color 400ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 0;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        background: lime;
+        opacity: 0;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+          width: 100%;
+          transition: width 0.5s;
+        }
       }
     }
   }

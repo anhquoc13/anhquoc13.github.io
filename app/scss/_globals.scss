@@ -1,11 +1,11 @@
-// html {
-//   font-size: 100%;
-//   box-sizing: border-box;
-// }
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +14,8 @@ body {
 }
 
 .container {
-  margin-right: 5%;
+  width: 70%;
+  margin: auto;
 }
 // Flexbox
 .flex {

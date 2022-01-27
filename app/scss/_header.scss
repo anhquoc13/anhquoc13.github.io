@@ -70,4 +70,46 @@
       }
     }
   }
+
+  &__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+
+    &__links {
+      a {
+        cursor: pointer;
+        position: relative;
+        // color:
+        transition: color 400ms ease-in-out;
+  
+        &:not(:last-child) {
+          margin-right: 60px;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 5px;
+          width: 0;
+          left: 0;
+          right: 0;
+          bottom: -10px;
+          background: $royal-blue;
+          opacity: 0;
+        }
+  
+        &:hover {
+          color: $royal-blue;
+          &::before {
+            opacity: 1;
+            width: 100%;
+            transition: width 0.5s;
+          }
+        }
+      }
+    }
+  }
 }

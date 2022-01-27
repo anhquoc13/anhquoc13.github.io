@@ -1,89 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/icon/icon-page.png"
-    />
-    <title>Anh-Quoc Dang | UX/ UI Designer</title>
-    <link rel="stylesheet" href="/public/style.min.css" />
-  </head>
-  <body>
-    <div class="home">
-      <img
-        class="firstPage__img"
-        src="/images/home/star.png"
-        alt="stars"
-        id="stars"
-      />
-      <!-- <header class="header container">
-        <nav class="">
-          <a class="header__logo" href="/index.html">@aquoc13</a>
-          <a href="#" class="header__menu hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <div class="header__links hide-for-mobile">
-            <a href="#">Works</a>
-            <a href="#">Resume</a>
-            <a href="#">About</a>
-          </div>
-        </nav>
-      </header> -->
 
-      <section class="firstPage">
-        
-        <img
-          class="firstPage__img"
-          src="/images/home/moon2.png"
-          alt="moon"
-          id="moon"
-        />
-        <img
-          class="firstPage__img"
-          src="/images/home/background-mount.png"
-          alt="mountain"
-          id="mountain"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon/icon-page.png" />
+  <title>Anh-Quoc Dang | UX/ UI Designer</title>
+  <link rel="stylesheet" href="/public/style.min.css" />
+</head>
 
-        <div id="text" class="firstPage__text" >
-          <div class="firstPage__text__subHeading">Portfolio</div>
-          <div class="firstPage__text__heading">
-            ANH-QUOC DANG
-            <span class="firstPage__text__heading--white"
-              >- ux/ ui designer, part-time coder</span
-            >
-          </div>
-        </div>
-      </section>
+<body>
+  <div class="home">
+    <div class="home__progress" id="progress">
+      <span class="home__progress__value" id="progress-value"></span>
     </div>
-
-    <script type="text/javascript">
-      let star = document.getElementById('stars');
-      let moon = document.getElementById("moon");
-      let mountain = document.getElementById("mountain");
-      let text = document.getElementById("text");
-                      
-      window.addEventListener('scroll', function(){
-        var value = window.scrollY;
+    <img class="firstPage__img" src="/images/home/star.png" alt="stars" id="stars" />
+    
+    <div class="container header">
+      <div class="header__navbar">
+        <div class="header__navbar__logo">
+          <a href="/index.html">@aquoc13</a>
+        </div>
+        <div class="header__navbar__links">
+          <a href="#">Works</a>
+          <a href="#">Resume</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+    </div>
+    
+    <section class="firstPage">
+      <img class="firstPage__img" src="/images/home/moon1.png" alt="moon" id="moon" />
+      <img class="firstPage__img" src="/images/home/bg.png" alt="mountain" id="mountain" />
+      <div class="firstPage__scroll">
       
-        star.style.top = value * 0.5 + 'px';
-        moon.style.left = -value * 0.5 + 'px';
-        mountain.style.top= -value * 0.15 + 'px';
-        text.style.top = value * 0.5 + 'px';
-      })
-    </script>
-  </body>
+      </div>
+      <div id="text" class="container firstPage__text">
+        <div class="firstPage__text__subHeading">Portfolio</div>
+        <div class="firstPage__text__heading">
+          ANH-QUOC DANG
+          <span class="firstPage__text__heading--white">-&nbsp;ux/&nbsp;ui designer, part-time&nbsp;coder</span>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+
+    </footer>
+  </div>
+
+  <script src="/app/js/home.js"></script>
+</body>
+
 </html>

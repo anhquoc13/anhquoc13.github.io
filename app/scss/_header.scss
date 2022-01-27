@@ -1,8 +1,13 @@
 .header {
-  padding: 0 5%;
   nav {
-    padding: 24px;
+    z-index: 1;
     font-size: $font-med;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 24px;
   }
   &__logo {
     cursor: pointer;
@@ -12,7 +17,9 @@
   a,
   a:visited,
   a:hover {
+    color: $c-white;
     text-decoration: none;
+    decoration: none;
   }
 
   &__menu {

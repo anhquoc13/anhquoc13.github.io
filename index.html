@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./app/Assets/Icons/icon-page.png" />
+    <title>Anh-Quoc Portfolio | UX/ UI Designer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon/icon-page.png" />
-  <title>Anh-Quoc Dang | UX/ UI Designer</title>
-  <link rel="stylesheet" href="/public/style.min.css" />
-</head>
-
-<body>
-  <div class="home">
-    <div class="home__progress" id="progress">
-      <span class="home__progress__value" id="progress-value"></span>
-    </div>
-    <img class="firstPage__img" src="/images/home/star.png" alt="stars" id="stars" />
-    
-    <div class="container header">
-      <div class="header__navbar">
-        <div class="header__navbar__logo">
-          <a href="/index.html">@aquoc13</a>
+  <body>
+    <div class="navbar">
+      <div class="container navbar__container">
+        <div class="logo__container">
+          <a href="/index.html"
+            ><span class="text-xl bold">Anh-Quoc Dang</span>
+            <span class="text-xl regular">Portfolio</span></a
+          >
         </div>
-        <div class="header__navbar__links">
-          <a href="#">Works</a>
-          <a href="#">Resume</a>
-          <a href="#">About</a>
+        <div class="navbar__links">
+          <a class="button" href="#">Projects</a>
+          <a class="button" href="#">About Me</a>
+          <a class="button">CV</a>
         </div>
       </div>
     </div>
-    
-    <section class="firstPage">
-      <img class="firstPage__img" src="/images/home/moon1.png" alt="moon" id="moon" />
-      <img class="firstPage__img" src="/images/home/bg.png" alt="mountain" id="mountain" />
-      <div class="firstPage__scroll">
-      
-      </div>
-      <div id="text" class="container firstPage__text">
-        <div class="firstPage__text__subHeading">Portfolio</div>
-        <div class="firstPage__text__heading">
-          ANH-QUOC DANG
-          <span class="firstPage__text__heading--white">-&nbsp;ux/&nbsp;ui designer, part-time&nbsp;coder</span>
+    <div class="section">
+        <div class="container">
+            <div class="hero-section">
+                <div class="description text-xl regular">HI THERE, QUOC’S HERE!</div>
+                <div class="heroText text-6xl bold">I create <span class="heroText__experiences">digital experiences</span>/ <span class="heroText__interface">interface</span> that my mom can navigate (and trust me, that's a feat)</div>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <footer class="footer">
-
-    </footer>
-  </div>
-
-  <script src="/app/js/home.js"></script>
-</body>
-
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="column-2">
+                <div class="img-container column-2__left--sunny">
+                    <img src="./app/Assets/Images/projects/mockup-1.png" alt="Image" width="824px" height="588px">
+                </div>
+                <div class="column-2__right--text">
+                    <div class="categories text-base regular title">A REDESIGN CASE STUDY</div>
+                    <div class="title text-5xl bold">Improving the TikTok Save Video Feature</div>
+                    <div class="pill-container text-sm regular">
+                        <div class="pill">Product Thinking</div>
+                        <div class="pill">Research</div>
+                        <div class="pill">UX Design</div>
+                    </div>
+                    <div class="button-container">
+                      <div class="button">Read more</div>
+                      <img src="./app/Assets/Images/projects/ArrowRight.svg" alt="ArrowRight" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+  </body>
 </html>

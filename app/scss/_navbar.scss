@@ -1,0 +1,51 @@
+@import "colors";
+@import "font";
+
+.navbar{
+    // overflow: hidden;
+    color: $grey900;
+    background: rgba(248, 248, 248, 0.2);
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        padding: 16px 0;
+    }
+
+    a,
+    a:visited,
+    a:hover {
+    color: $grey900;
+    text-decoration: none;
+  }
+
+    .logo {
+        &__container {
+            text-decoration: none;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .button {
+        padding: 0 12px;
+        text-decoration: underline;
+
+        &--large {
+            font-size: $text-xl;
+        }
+    }
+}

@@ -1,8 +1,9 @@
 @import "fonts";
 @import "colors";
 
-body {
-    background-image: url('../Assets/Images/projects/background.svg');
+.index {
+    background-image: url('/Public/Assets/Images/projects/background1.svg');
+    background-position: 400px -400px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -12,7 +13,7 @@ body {
         .container {
             .hero-section {
                 color: $grey700;
-                padding: 200px 0;
+                padding: 150px 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -46,7 +47,7 @@ body {
                     display: flex;
                     flex-direction: row;
                     width: 100%;
-                    gap: 24px;
+                    gap: 88px;
                     padding: 100px 0;
                     height: 588px;
 
@@ -55,7 +56,6 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        position: relative;
                     }
 
                     .img-container img {
@@ -63,6 +63,10 @@ body {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                    }
+
+                    .img-container img:hover {
+                        transform: scale(1.1);
                     }
     
                     &__left {
@@ -75,6 +79,22 @@ body {
                             width: 50%;
                             height: auto;
                         }
+
+                        &--blue {
+                            border-radius: 32px;
+                            box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.2);
+                            background: linear-gradient(224.86deg, #D5DAF0 4.87%, #296EDF 98.81%);
+                            width: 50%;
+                            height: auto;
+                        }
+
+                        &--greenish {
+                            border-radius: 32px;
+                            box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.2);
+                            background: $greenish;
+                            width: 50%;
+                            height: auto;
+                        }
                     }
         
                     &__right {
@@ -82,7 +102,7 @@ body {
 
                         &--text {
                             width: 50%;
-                            padding: 32px 0 32px 64px;
+                            padding: 32px 0;
                             display: flex;
                             flex-direction: column;
                             gap: 24px;
@@ -107,15 +127,30 @@ body {
                             border-radius: 60px;
                         }
                     }
+
+                    .button-container {
+                        display: flex;
+                        color: $blue500;
+
+                        .button {
+                            margin: 0 8px 0 0;
+                            transition: 300ms;
+                            border-bottom: 1px solid $blue500;
+                        }
+
+                        .button:hover {
+                            border-color: transparent;
+                        }
+                    }
+
+                    .align-right {
+                        width: 50%;
+                        text-align: right;
+                        align-items: flex-end;
+                    }
                 
                 }
             }
-
-            .column:hover img {
-                transform: scale(1.15); /* Adjust the scale value for desired zoom out effect */
-
-            }
-            
 
         }
 

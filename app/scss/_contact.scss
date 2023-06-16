@@ -1,0 +1,77 @@
+@import "colors";
+@import "fonts";
+
+.contact {
+    min-height: 100vh;
+    background-image: url('/public/Assets/Images/contact/background.svg');
+    background-position: 0px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .section {
+        .container {
+            display: flex;
+            justify-content:flex-start;
+
+            .two-column {
+                padding-top: 160px;
+                display: flex;
+                justify-self: center;
+                width: 100%;
+                gap: 48px;
+
+                .description {
+                    width: 50%;
+                    height: auto;
+
+                    .greetings {
+                        background-image: $deepblue;
+                        background-size: 100%;
+                        background-repeat: repeat;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent;
+                    }
+
+                    .body-text {
+                        color: $grey700;
+                    }
+                }
+
+                .contactForm {
+                    width: 50%;
+                    height: auto;
+
+                    &__container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;  
+                        
+                        .form-group {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            width: 100%;
+                            color: $grey700;
+                        }
+                    }
+                   
+                    input,
+                    textarea {
+                        padding: 12px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $grey700;
+                        border: 1px solid $grey300;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

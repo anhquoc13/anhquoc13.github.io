@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/style.min.css" />
     <link
       rel="icon"
@@ -11,88 +11,121 @@
       href="public/Assets/Icons/icon-page.png"
     />
     <title>Anh-Quoc Portfolio | UX/ UI Designer</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="container navbar__container">
-          <div class="logo__container">
-            <a href="/index.html"
-              ><span class="text-xl bold">Anh-Quoc Dang</span>
-              <span class="text-xl regular">Portfolio</span></a
-            >
-          </div>
-          <div class="navbar__links">
-            <a class="button" href="./index.html">Projects</a>
-            <a class="button" href="./aboutme.html">About Me</a>
-            <a class="button" href="./public/Assets/PDF/UXUI_DANGANHQUOC.pdf">CV</a>
-            <a class="button--secondary" href="./contact.html">Say Hi!</a>
+      <div class="container navbar__container">
+        <div class="logo__container">
+          <a href="/index.html"
+            ><span class="text-xl bold">Anh-Quoc Dang</span>
+            <span class="text-xl regular">Portfolio</span></a
+          >
+        </div>
+        <div class="navbar__links">
+          <a class="button" href="./index.html">Projects</a>
+          <a class="button" href="./aboutme.html">About Me</a>
+          <a class="button" href="./public/Assets/PDF/UXUI_DANGANHQUOC.pdf"
+            >CV</a
+          >
+          <a class="button--secondary" href="./contact.html">Say Hi!</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="section">
+        <div class="container">
+          <div class="two-column">
+            <div class="description">
+              <div class="greetings text-xl regular">Hi there,</div>
+              <div class="hero-text text-6xl bold">Let’s connect!</div>
+              <div class="body-text text-base regular">
+                <p>
+                  I can make your website so user-friendly that even my mom
+                  would navigate it with her eyes closed.
+                </p>
+                <p>
+                  So, let's team up and create a digital masterpiece that will
+                  amaze both tech-savvy users and those who are more fond of the
+                  old-school flip phone.
+                </p>
+                <p>Together, we'll make something fun from scrappy ideas!</p>
+              </div>
+            </div>
+            <div class="contactForm text-base regular">
+              <form action="" class="contactForm__container" name="contact-me">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Your full name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="me@company.com"/>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    class="text-base regular"
+                    style="font-family: 'Inter';"
+                    name="message"
+                    id="message"
+                    style="height: 200px;"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <button
+                  class="button--secondary text-base"
+                  style="border: transparent"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    <div class="contact">
-        <div class="section">
-            <div class="container">
-                <div class="two-column">
-                    <div class="description">
-                        <div class="greetings text-xl regular">
-                            Hi there,
-                        </div>
-                        <div class="hero-text text-6xl bold">
-                            Let’s connect!
-                        </div>
-                        <div class="body-text text-base regular">
-                            <p>I can make your website so user-friendly that even my mom would navigate it with her eyes closed. </p>
-                            <p>So, let's team up and create a digital masterpiece that will amaze both tech-savvy users and those who are more fond of the old-school flip phone. </p>
-                            <p>Together, we'll make something fun from scrappy ideas!</p>
-                        </div>
-                    </div>
-                    <div class="contactForm text-base regular">
-                        <form action="" class="contactForm__container">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" style="height: 100px;"></textarea>
-                            </div>
-                            <button class="button--secondary text-base" style="border: transparent;" type="submit">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="container footer__container">
-              <div class="footer-text text-base bold">© 2023 Anh-Quoc Dang</div>
-              <div class="container-links">
-                <a href="https://www.linkedin.com/in/aquoc13/"
-                  ><img
-                    src="public/Assets/Images/projects/LinkedIn.svg"
-                    alt=""
-                    srcset=""
-                /></a>
-                <a href="https://www.behance.net/anhquocdang"
-                  ><img
-                    src="public/Assets/Images/projects/Behacne.svg"
-                    alt=""
-                    srcset=""
-                /></a>
-                <a
-                  href="https://open.spotify.com/playlist/3brXu2BxG82POewGhZLFES?si=15a6ea8894a6461d"
-                  ><img
-                    src="public/Assets/Images/projects/Spotify.svg"
-                    alt=""
-                    srcset=""
-                /></a>
-              </div>
-            </div>
+      <div class="footer">
+        <div class="container footer__container">
+          <div class="footer-text text-base bold">© 2023 Anh-Quoc Dang</div>
+          <div class="container-links">
+            <a href="https://www.linkedin.com/in/aquoc13/"
+              ><img
+                src="public/Assets/Images/projects/LinkedIn.svg"
+                alt=""
+                srcset=""
+            /></a>
+            <a href="https://www.behance.net/anhquocdang"
+              ><img
+                src="public/Assets/Images/projects/Behacne.svg"
+                alt=""
+                srcset=""
+            /></a>
+            <a
+              href="https://open.spotify.com/playlist/3brXu2BxG82POewGhZLFES?si=15a6ea8894a6461d"
+              ><img
+                src="public/Assets/Images/projects/Spotify.svg"
+                alt=""
+                srcset=""
+            /></a>
           </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzQaRHIpPOwbVjQn5giNvoAsmM1rJAITDywWVWkyH2tPiwF-UO-6a1wl148D5rSojz8uQ/exec';
+      const form = document.forms["contact-me"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>

@@ -69,7 +69,12 @@
                         color: $grey700;
                         border: 1px solid $grey300;
                         border-radius: 2px;
+
+                        &::placeholder {
+                            color: $grey300;
+                          }
                     }
+                    
                 }
             }
         }

@@ -14,6 +14,17 @@ body {
     background-color: $backgroundColor;
 }
 
+.wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+    &--aboutEm {
+        background-image: url('/public/Assets/Images/aboutEm/background2.svg');
+        background-position: 0px -450px;
+    }
+}
+
 .section {
     width: 100%;
 }

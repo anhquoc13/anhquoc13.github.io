@@ -12,7 +12,7 @@
     width: 100%;
     z-index: 1030;
     
-    &__container {
+    .navbar-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -27,13 +27,12 @@
         text-decoration: none;
     }
 
-    .logo {
-        &__container {
-            text-decoration: none;
-        }
+    .logo-container {
+        text-decoration: none;
     }
+    
 
-    &__links {
+    .navbar-links {
         display: flex;
         justify-content: space-between;
         align-items: center;

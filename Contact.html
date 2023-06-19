@@ -13,81 +13,87 @@
     <title>Anh-Quoc Portfolio | UX/ UI Designer</title>
   </head>
   <body>
-    <div class="navbar">
-      <div class="container navbar__container">
-        <div class="logo__container">
-          <a href="/index.html"
-            ><span class="text-xl bold">Anh-Quoc Dang</span>
-            <span class="text-xl regular">Portfolio</span></a
-          >
+    <div class="wrapper wrapper--contact">
+      <header class="navbar">
+        <div class="container navbar-content">
+          <div class="logo-container">
+            <a href="/index.html"
+              ><span class="text-xl bold">Anh-Quoc Dang</span>
+              <span class="text-xl regular">Portfolio</span></a
+            >
+          </div>
+          <div class="navbar-links">
+            <a class="button" href="./index.html">Projects</a>
+            <a class="button" href="./aboutme.html">About Me</a>
+            <a
+              class="button"
+              href="public/Assets/PDF/UXUI_DANGANHQUOC.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CV</a
+            >
+            <a class="button--secondary" href="./contact.html">Say Hi!</a>
+          </div>
         </div>
-        <div class="navbar__links">
-          <a class="button" href="./index.html">Projects</a>
-          <a class="button" href="./aboutme.html">About Me</a>
-          <a class="button" href="./public/Assets/PDF/UXUI_DANGANHQUOC.pdf"
-            >CV</a
-          >
-          <a class="button--secondary" href="./contact.html">Say Hi!</a>
-        </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="section">
-        <div class="container">
-          <div class="two-column">
-            <div class="description">
-              <div class="greetings text-xl regular">Hi there,</div>
-              <div class="hero-text text-6xl bold">Let’s connect!</div>
-              <div class="body-text text-base regular">
-                <p>
-                  I can make your website so user-friendly that even my mom
-                  would navigate it with her eyes closed.
-                </p>
-                <p>
-                  So, let's team up and create a digital masterpiece that will
-                  amaze both tech-savvy users and those who are more fond of the
-                  old-school flip phone.
-                </p>
-                <p>Together, we'll make something fun from scrappy ideas!</p>
+      </header>
+      <main class="contact">
+        <div class="section">
+          <div class="container">
+            <div class="two-column">
+              <div class="description">
+                <div class="greetings text-xl regular">Hi there,</div>
+                <div class="hero-text text-6xl bold">Let’s connect!</div>
+                <div class="body-text text-base regular">
+                  <p>
+                    I can make your website so user-friendly that even my mom
+                    would navigate it with her eyes closed.
+                  </p>
+                  <p>
+                    So, let's team up and create a digital masterpiece that will
+                    amaze both tech-savvy users and those who are more fond of the
+                    old-school flip phone.
+                  </p>
+                  <p>Together, we'll make something fun from scrappy ideas!</p>
+                </div>
               </div>
-            </div>
-            <div class="contactForm text-base regular">
-              <form action="" class="contactForm__container" name="contact-me">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" placeholder="Your full name" />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" placeholder="me@company.com"/>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea
-                    class="text-base regular"
-                    style="font-family: 'Inter';"
-                    name="message"
-                    id="message"
-                    style="height: 200px;"
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-                <button
-                  class="button--secondary text-base"
-                  style="border: transparent"
-                  type="submit"
-                >
-                  Send Message
-                </button>
-              </form>
+              <div class="contactForm text-base regular">
+                <form action="" class="contactForm__container" name="contact-me">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your full name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="me@company.com"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="text-base regular"
+                      style="font-family: 'Inter';"
+                      name="message"
+                      id="message"
+                      style="height: 200px;"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="button--secondary text-base"
+                    style="border: transparent"
+                    type="submit"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="container footer__container">
-          <div class="footer-text text-base bold">© 2023 Anh-Quoc Dang</div>
-          <div class="container-links">
+      </main>
+      <footer>
+        <div class="container container--footer">
+          <div class="text text-base bold">© 2023 Anh-Quoc Dang</div>
+          <div class="footer-links">
             <a href="https://www.linkedin.com/in/aquoc13/"
               ><img
                 src="public/Assets/Images/projects/LinkedIn.svg"
@@ -110,6 +116,7 @@
           </div>
         </div>
       </div>
+      </footer>
     </div>
 
     <script>

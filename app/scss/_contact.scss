@@ -2,25 +2,15 @@
 @import "fonts";
 
 .contact {
-    min-height: 100vh;
-    background-image: url('/public/Assets/Images/contact/background.svg');
-    background-position: 0px 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     .section {
         .container {
+            padding-top: 150px;
             display: flex;
-            justify-content:flex-start;
+            justify-content: center;
+            justify-items: center;
 
             .two-column {
-                padding-top: 160px;
                 display: flex;
-                justify-self: center;
                 width: 100%;
                 gap: 48px;
 

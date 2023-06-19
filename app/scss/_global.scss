@@ -18,10 +18,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    
+
     &--aboutEm {
         background-image: url('/public/Assets/Images/aboutEm/background2.svg');
         background-position: 0px -450px;
+    }
+
+    &--projects {
+        background-image: url('/public/Assets/Images/projects/background1.svg');
+        background-position: 400px -350px ;
+        height: 100vh;
+    }
+
+    &--contact {
+        background-image: url('/public/Assets/Images/contact/background.svg');
+        background-position: 0px 20px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 

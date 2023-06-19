@@ -22,12 +22,14 @@ body {
     &--aboutEm {
         background-image: url('/public/Assets/Images/aboutEm/background2.svg');
         background-position: 0px -450px;
+        height: 100vh;
     }
 
     &--projects {
         background-image: url('/public/Assets/Images/projects/background1.svg');
-        background-position: 400px -350px ;
+        background-position: 200px -600px ;
         height: 100vh;
+      
     }
 
     &--contact {

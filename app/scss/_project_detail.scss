@@ -1,0 +1,23 @@
+.project-detail-screen {
+  // background-color: blue;
+  .about-project{
+    display: flex;
+    flex-direction: column;
+    &-desc {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .sub-content {
+    .two-img-per-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -6px;
+      img {
+        width: calc(50% - 12px);
+        display: block;
+        margin: 6px;
+      }
+    }
+  }
+}
